@@ -10,7 +10,7 @@ class VideoEmbedPlugin(CMSPluginBase):
 
         model = VideoPluginModel
         name = ("Embedded Video")
-        render_template = "oembed/_video.html"
+        render_template = "djangocms_oembed/_video.html"
 
         def render(self, context, instance, placeholder):
             video = instance.video_url
