@@ -1,10 +1,10 @@
 from django.db import models
 from cms.models import CMSPlugin
-
-# Create your models here.
+from django.utils.encoding import  python_2_unicode_compatible
 from embed_video.fields import EmbedVideoField
 
 
+@python_2_unicode_compatible
 class VideoPluginModel(CMSPlugin):
     name = models.CharField(
         blank=True,
@@ -12,5 +12,5 @@ class VideoPluginModel(CMSPlugin):
     )
     video_url = EmbedVideoField()
 
-    def __unicode__(self):
-        return u'%s' % self.name
+    def __str__(self):
+        return self.name
