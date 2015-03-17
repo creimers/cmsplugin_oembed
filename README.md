@@ -2,4 +2,4 @@
 
 ### installation
 
-* install (django-embed-video)[https://github.com/yetty/django-embed-video]
+* install [django-embed-video](https://github.com/yetty/django-embed-video)
