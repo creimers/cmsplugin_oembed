@@ -20,7 +20,7 @@ setup(
     keywords = ['djangocms', 'django', 'responsive', 'oembed', 'video'], 
     install_requires = [
         'django-cms>=3.0',
-        'django-embed-video==1.0.0',
+        'django-embed-video>=1.0.0',
     ],
     classifiers = [
         'Operating System :: OS Independent',
