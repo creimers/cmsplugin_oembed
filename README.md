@@ -1,6 +1,6 @@
 ## djangocms oembed plugin
 
-WORK IN PROGRESS
+WORK IN PROGRESS. Don't try this at home.
 
 ### installation
 
