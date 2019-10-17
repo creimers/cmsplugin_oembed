@@ -3,9 +3,9 @@ try:
 except ImportError:
     from distutils.core import setup
 
-import djangocms_oembed
+import cmsplugin_oembed
 
-version = djangocms_oembed.__version__
+version = cmsplugin_oembed.__version__
 
 setup(
     name = 'djangocms_oembed',
