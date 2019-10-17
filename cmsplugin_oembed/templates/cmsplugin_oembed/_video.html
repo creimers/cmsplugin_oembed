@@ -1,7 +1,7 @@
 {% load embed_video_tags sekizai_tags %}
 
 <div class="oembed-video">
-	{% video item 'small' %}
+    {% video item 'small' is_secure=True %}
 </div>
 
 {% addtoblock "css" %}<link rel="stylesheet" href="{{ STATIC_URL }}djangocms_oembed/css/style.css">{% endaddtoblock "css" %}
@@ -9,9 +9,9 @@
 {% addtoblock "js" %}<script src="{{ STATIC_URL }}bower_components/fitvids/jquery.fitvids.js"></script>{% endaddtoblock "js" %}
 {% addtoblock "js" %}
 <script>
-	$(document).ready(function(){
-			// Target your .container, .wrapper, .post, etc.
-					$(".oembed-video").fitVids();
+$(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(".oembed-video").fitVids();
 });
 </script>
 {% endaddtoblock "js" %}
